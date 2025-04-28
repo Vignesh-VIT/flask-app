@@ -35,4 +35,4 @@ jobs:
 
     - name: Deploy to k3s
       run: |
-        kubectl apply -f deployment.yaml
+        kubectl apply -f deployment.yaml --insecure-skip-tls-verify
